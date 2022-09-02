@@ -1,0 +1,75 @@
+.request-block{
+    padding: 110px 0 350px;
+    background-color: #709dca;
+    position: relative;
+    &__wrapper{
+        .title{
+            color: #ffffff;
+            font-family: "Gotham-Bold";
+            font-size: 35pt;
+        }
+        .subtitle{
+            color: #ffffff;
+            font-family: "Open Sans";
+            font-weight: 300;
+            font-size: 16pt;
+        }
+        .inputs{
+            padding: 35px 0 0;
+            div{
+                input{
+                    font-family: "Open Sans";
+                    font-size: 14pt;
+                    padding: 15px;
+                    width: 100%;
+                    border: none;
+                    border-radius: 1px;
+                }
+                .text{
+                    background-image: url("../img/name.png");
+                    background-repeat: no-repeat;
+                    background-position: 15px;
+                    padding-left: 40px;
+                }
+                .email{
+                    background-image: url("../img/email.png");
+                    background-repeat: no-repeat;
+                    background-position: 15px;
+                    padding-left: 40px;
+                }
+                .tel{
+                    background-image: url("../img/phone.png");
+                    background-repeat: no-repeat;
+                    background-position: 15px;
+                    padding-left: 40px;
+                }
+                .button{
+                    color: #ffffff;
+                    background-color: #ffbb42;
+                    text-transform: uppercase;
+                    &:hover{
+                        color: #ffbb42;
+                        background-color: #ffffff;
+                    }
+                }
+            }
+        }
+        .laptop{
+            position: absolute;
+            bottom: -70px;
+            &__screen{
+                position: relative;
+            }
+            &__image{
+                position: absolute;
+                top: 18px;
+                left: 101px;
+                width: 69%;
+                img{
+                    height: 246px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

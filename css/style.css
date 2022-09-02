@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 *,
 *::before,
 *::after {
@@ -51,8 +53,16 @@ select {
 .container {
   max-width: 1250px;
   margin: 0 auto;
+  padding: 0;
 }
 
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("../fonts/Gotham-Bold.eot");
+  src: local("☺"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
 .header {
   padding: 30px 0;
 }
@@ -71,6 +81,7 @@ select {
 }
 .header div nav ul li a {
   font-family: Lato;
+  font-size: 14pt;
   text-decoration: none;
   color: #868686;
   padding: 15px 20px;
@@ -78,4 +89,76 @@ select {
 .header div nav ul li a:hover {
   color: #ffffff;
   background-color: #ffbb42;
+}
+
+.request-block {
+  padding: 110px 0 350px;
+  background-color: #709dca;
+  position: relative;
+}
+.request-block__wrapper .title {
+  color: #ffffff;
+  font-family: "Gotham-Bold";
+  font-size: 35pt;
+}
+.request-block__wrapper .subtitle {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 16pt;
+}
+.request-block__wrapper .inputs {
+  padding: 35px 0 0;
+}
+.request-block__wrapper .inputs div input {
+  font-family: "Open Sans";
+  font-size: 14pt;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 1px;
+}
+.request-block__wrapper .inputs div .text {
+  background-image: url("../img/name.png");
+  background-repeat: no-repeat;
+  background-position: 15px;
+  padding-left: 40px;
+}
+.request-block__wrapper .inputs div .email {
+  background-image: url("../img/email.png");
+  background-repeat: no-repeat;
+  background-position: 15px;
+  padding-left: 40px;
+}
+.request-block__wrapper .inputs div .tel {
+  background-image: url("../img/phone.png");
+  background-repeat: no-repeat;
+  background-position: 15px;
+  padding-left: 40px;
+}
+.request-block__wrapper .inputs div .button {
+  color: #ffffff;
+  background-color: #ffbb42;
+  text-transform: uppercase;
+}
+.request-block__wrapper .inputs div .button:hover {
+  color: #ffbb42;
+  background-color: #ffffff;
+}
+.request-block__wrapper .laptop {
+  position: absolute;
+  bottom: -70px;
+}
+.request-block__wrapper .laptop__screen {
+  position: relative;
+}
+.request-block__wrapper .laptop__image {
+  position: absolute;
+  top: 18px;
+  left: 101px;
+  width: 69%;
+}
+.request-block__wrapper .laptop__image img {
+  height: 246px;
+  width: 100%;
 }
