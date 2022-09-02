@@ -1,0 +1,22 @@
+.header{
+    padding: 30px 0;
+    div{
+        text-align: center;
+        padding: 0;
+        nav{
+            ul{
+                li{
+                    a{
+                        text-decoration: none;
+                        color: #868686;
+                        padding: 15px 20px;
+                        &:hover{
+                            color: #ffffff;
+                            background-color: #ffbb42;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
