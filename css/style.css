@@ -148,6 +148,7 @@ select {
 .request-block__wrapper .laptop {
   position: absolute;
   bottom: -70px;
+  left: 0;
 }
 .request-block__wrapper .laptop__screen {
   position: relative;
