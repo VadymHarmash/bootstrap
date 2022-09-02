@@ -64,9 +64,13 @@ select {
   padding: 0;
 }
 .header div nav ul {
-  padding: 15px 0;
+  padding: 12px 0;
+}
+.header div nav ul li {
+  margin: 0;
 }
 .header div nav ul li a {
+  font-family: Lato;
   text-decoration: none;
   color: #868686;
   padding: 15px 20px;
